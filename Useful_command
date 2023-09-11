@@ -1,0 +1,16 @@
+// dist Folder is for javascript code that come from typescript change to js (setting is in tsconfig.json)
+// Change "module": "ES2015", from "module": "commonjs", When you use interface many file but it can become javascript error
+// because javascript can't read export syntax in interface file . So What will we do
+// Do somethoing, can read export function from javascript. that is 
+// npm init and all enter 
+// that will occur package.json
+// add "type" : "module"
+// Now javascript can read export
+
+
+tsc                             ==> It change typescript code to javascript code
+node ./dist/index.ts            ==> it run javascipt code in this file
+tsc -w                          ==> It change typescript code to javascript code automatically when you saved the file
+node --watch ./dist/index.ts    ==> It run js code automatically , when typescript run "tsc -w"
+
+
